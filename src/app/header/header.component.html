@@ -1,0 +1,9 @@
+<button *ngIf='userIsAuthenticated' (click)="onLogout()">Log Out</button>
+<select *ngIf='!userIsAuthenticated' [ngModel]="selectedValue" name="type" (ngModelChange)="changeSelect($event)">
+  <option *ngFor="let data of data" [value]="data.value">
+      {{data.value}}
+  </option>
+  <option selected hidden [value]="selectedValue">Chose user</option>
+</select>
+
+

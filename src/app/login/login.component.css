@@ -1,0 +1,12 @@
+.container-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-form > * {
+  width: 100%;
+}
+
+p {
+  color: red;
+}
